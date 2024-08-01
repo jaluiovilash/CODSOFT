@@ -1,0 +1,60 @@
+.pricing-content {
+    padding: 64px 64px;
+}
+
+.pricing-box {
+    max-width: 1200px;
+    margin: 74px auto;
+}
+
+.pricing__offers ul li {
+    margin: 8px 0;
+}
+
+.box {
+    width: 400px;
+    margin: 0 16px;
+
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.box h3 {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.box p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 26px;
+    margin-top: 6px;
+}
+
+.basic {
+    background-color: #fff;
+}
+
+.standard {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.premium {
+    background-color: #fff;
+}
+
+.puchase {
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 12px 32px;
+    margin: 16px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    border: 1px solid var(--primary-color);
+    outline: var(--primary-color);
+    border-radius: 25px;
+
+    cursor: pointer;
+}

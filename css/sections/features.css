@@ -1,0 +1,43 @@
+.features-content {
+    background-color: var(--white-200);
+    color: #000;
+
+    padding: 50px 120px;
+}
+
+.features-content .heading {
+    margin-left: 64px;
+}
+
+.techzap__title h1 {
+    font-size: 3.5rem;
+}
+
+.features-title {
+    margin: 0 64px 64px 64px;
+}
+
+.techzap__description-features {
+    width: 750px;
+    margin-top: 32px;
+    padding-left: 50px;
+    font-size: 1.2rem;
+}
+
+.features__box {
+    background-color: #fff;
+    color: #000;
+    width: 700px;
+
+    padding: 32px;
+    margin: 32px 64px;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px rgb(224, 224, 224)
+}
+
+.features__box img {
+    width: 56px;
+    border-radius: 8px;
+    margin-bottom: 23px;
+}

@@ -1,0 +1,58 @@
+.header-nav {
+    background-color: rgba(243, 243, 243, 0.8);
+    color: #000;
+}
+
+.header-nav__logo {
+    color: var(--primary-color);
+    margin: 0 50px;
+
+}
+
+.header-nav__logo img {
+    width: 70px;
+    height: auto;
+    margin: 6px;
+}
+
+.header-nav__menu {
+    list-style-type: none;
+}
+
+.header-nav__menu a {
+    margin: auto 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.header-nav__menu a:hover {
+    color: var(--primary-color);
+}
+
+.header-nav__register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--primary-color);
+}
+
+.header-nav__register {
+    margin: 0 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login {
+    padding: 12px 28px;
+    background-color: var(--primary-color);
+    color: #fff;
+
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 600;
+
+    cursor: pointer;
+}

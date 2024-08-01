@@ -1,0 +1,15 @@
+.company__imgs {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.company__imgs-img img {
+    width: 160px;
+    height: auto;
+    margin: 0 50px;
+}

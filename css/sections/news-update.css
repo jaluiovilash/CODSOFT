@@ -1,0 +1,25 @@
+.news-upadate-content {
+    background-color: #fff;
+    color: #000;
+
+    padding: 112px 128px;
+}
+
+.news-upadate-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+
+    margin-bottom: 50px;
+}
+
+.news-update__card {
+    width: 550px;
+    height: 500px;
+
+    font-size: 1.2rem;
+}
+
+.news-update__card img {
+    width: 500px;
+    height: auto;
+}

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* other css file imports */
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/company.css");
+@import url("sections/about.css");
+@import url("sections/pricing.css");
+@import url("sections/features.css");
+@import url("sections/testimonials.css");
+@import url("sections/news-update.css");
+@import url("sections/call-to-action.css");
+@import url("sections/footer.css");
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+  --Lato: "Lato";
+
+  --primary-color: #ff7518;
+  --secondary-color: #121212;
+
+  --white-200: #f3f3f3;
+  --gray-100: #959595;
+
+  --color-creamson: #fff0de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--Lato);
+
+  background-color: var(--color-creamson);
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 7px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techzap__title {
+  font-size: 4rem;
+  font-weight: 600;
+
+  color: var(--secondary-color);
+
+  margin-top: 16px;
+}
+
+.techzap__description {
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  letter-spacing: -0.01em;
+
+  margin: 24px 0px;
+  color: var(--gray-100);
+}
+
+.techzap__hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.techzap__hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* START: about us media queries */
+@media screen and (max-width: 1024px) {
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us__img {
+    flex-direction: row;
+  }
+
+  .about-us__img-techzap3 {
+    border-bottom: none;
+    border-right: 8px solid var(--color-creamson);
+  }
+
+  .about-us__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-us__img {
+    flex-direction: column;
+  }
+
+  .about-us__img-techzap3 {
+    border-bottom: 8px solid var(--color-creamson);
+    border-right: none;
+  }
+
+  .about-us__button {
+    display: block;
+    top: 47%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .about-us__img-techzap2 img,
+  .about-us__img-techzap3 img {
+    width: 50%;
+    height: 160px;
+
+    object-fit: contain;
+  }
+
+  .about-us__img div {
+    padding: 32px;
+  }
+
+  .about-us__button {
+    top: 44%;
+  }
+
+  .about-us__content {
+    padding: 32px;
+  }
+}
+
+/* END: about us media queries */
+
+
+/* START: header media querie */
+@media screen and (max-width: 900px) {
+  .header__nav {
+    background: var(--primary-color);
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo {
+    padding-left: 0;
+  }
+}
+
+/* END: header media queries */
+
+/* START: hero media queries */
+@media screen and (max-width: 1060px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-img img {
+    width: 100%;
+
+    transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-img h2 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-img h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .hero-content-info {
+    padding: 32px;
+  }
+
+  .hero-content-info h1 {
+    font-size: 60px;
+  }
+
+  .hero-content-info p {
+    margin: 32px 0;
+  }
+
+  .hero-content__buttons {
+    margin: 41px 0;
+  }
+
+  .hero-content__testimonial {
+    padding: 32px;
+  }
+}
+
+/* END: hero media queries */
+
+/* START: popular media queries */
+@media screen and (max-width: 550px) {
+  .popular-foods {
+    padding: 64px 32px;
+  }
+
+  .popular-foods__card,
+  .popular-foods__card.active-card {
+    min-width: 100%;
+  }
+}
+
+/* END: popular media queries */
+
+/* START: subscribe media queries */
+@media screen and (max-width: 550px) {
+  .subscription {
+    padding: 64px 32px;
+  }
+
+  .subscription h2 {
+    font-size: 68px;
+    line-height: 100px;
+  }
+
+  .subscription__form {
+    flex-direction: column;
+    gap: 20px;
+
+    min-width: 100%;
+    border-radius: 20px;
+    padding: 0;
+
+    border: none;
+  }
+
+  .subscription__form input {
+    min-height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  .subscription__form button {
+    min-width: 100%;
+  }
+}
+
+/* END: subscribe media queries */
+
+/* START: trending media queries */
+@media screen and (max-width: 1024px) {
+  .trending-techzap {
+    flex-direction: column;
+  }
+
+  .trending-drink {
+    flex-direction: column-reverse;
+  }
+
+  .trending__img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .trending__discover {
+    display: none;
+  }
+
+  .trending__arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trending__img img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .trending__content {
+    padding: 32px;
+  }
+}
+
+/* END: trending media queries */

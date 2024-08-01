@@ -1,0 +1,39 @@
+.about-us__content {
+    max-width: 1550px;
+    margin: auto;
+    padding: 128px 0;
+}
+
+.about-us__left img {
+    width: 500px;
+    height: auto;
+}
+
+.about-us__right {
+    padding: 64px;
+}
+
+.about-us__right h3 {
+    line-height: 20px;
+}
+
+.about-us__right__intro {
+    margin: 24px 0;
+    color: var(--gray-100);
+}
+
+.about-us__goals {
+    margin: 23px 28px 23px 0;
+}
+
+.about-us__goals-img img {
+    width: 48px;
+    height: auto;
+
+    margin: 0 16px 0 0;
+    border-radius: 8px;
+}
+
+.techzap__description.goals {
+    margin: 7px 0;
+}

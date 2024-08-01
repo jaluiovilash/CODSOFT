@@ -1,0 +1,41 @@
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.company-footer {
+    max-width: 1300px;
+    margin: auto;
+    padding: 80px;
+
+    text-align: center;
+}
+
+.company-name {
+    font-size: 3.8rem;
+}
+
+.company__description {
+    margin: 32px;
+    font-size: 1.2rem;
+}
+
+.copyright {
+    padding: 32px;
+}
+
+.terms-conditions ul {
+    list-style-type: none;
+}
+
+.terms-conditions ul li {
+    margin: 10px;
+}
+
+.social-media img {
+    width: 26px;
+    height: auto;
+    margin: 6px 12px;
+
+    cursor: pointer;
+}
